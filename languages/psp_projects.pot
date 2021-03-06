@@ -1,0 +1,167 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Project Panorama Pages\n"
+"POT-Creation-Date: 2021-03-06 14:53-0500\n"
+"PO-Revision-Date: 2021-03-06 14:53-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: psp-pages.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/models/pages.php:8
+msgctxt "Post Type General Name"
+msgid "Pages"
+msgstr ""
+
+#: lib/models/pages.php:9
+msgctxt "Post Type Singular Name"
+msgid "Page"
+msgstr ""
+
+#: lib/models/pages.php:10 lib/models/pages.php:32 lib/views/admin.php:5
+#: lib/views/navigation.php:20 lib/views/projects.php:95
+msgid "Pages"
+msgstr ""
+
+#: lib/models/pages.php:11
+msgid "Parent Page:"
+msgstr ""
+
+#: lib/models/pages.php:12
+msgid "All Pages"
+msgstr ""
+
+#: lib/models/pages.php:13
+msgid "View Page"
+msgstr ""
+
+#: lib/models/pages.php:14
+msgid "Add New Page"
+msgstr ""
+
+#: lib/models/pages.php:15
+msgid "New Page"
+msgstr ""
+
+#: lib/models/pages.php:16
+msgid "Edit Page"
+msgstr ""
+
+#: lib/models/pages.php:17
+msgid "Update Page"
+msgstr ""
+
+#: lib/models/pages.php:18
+msgid "Search Pages"
+msgstr ""
+
+#: lib/models/pages.php:19
+msgid "No pages found"
+msgstr ""
+
+#: lib/models/pages.php:20
+msgid "No pages found in Trash"
+msgstr ""
+
+#: lib/models/pages.php:31
+msgid "psp_projects"
+msgstr ""
+
+#: lib/models/pages.php:69
+msgid "Private Page"
+msgstr ""
+
+#: lib/models/pages.php:73 lib/views/admin.php:51
+msgid "Yes"
+msgstr ""
+
+#: lib/vendor/plugin-update-checker/Puc/v4p2/Plugin/UpdateChecker.php:358
+msgid "Check for updates"
+msgstr ""
+
+#: lib/vendor/plugin-update-checker/Puc/v4p2/Plugin/UpdateChecker.php:405
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: lib/vendor/plugin-update-checker/Puc/v4p2/Plugin/UpdateChecker.php:407
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: lib/vendor/plugin-update-checker/Puc/v4p2/Plugin/UpdateChecker.php:409
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: lib/vendor/plugin-update-checker/Puc/v4p2/Vcs/PluginUpdateChecker.php:85
+msgid "There is no changelog available."
+msgstr ""
+
+#: lib/views/admin.php:22
+msgid "Panorama Pages"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: lib/views/admin.php:33
+msgid "Project Panorama Pages"
+msgstr ""
+
+#: lib/views/admin.php:38
+msgid "Project Pages Menu Location"
+msgstr ""
+
+#: lib/views/admin.php:39
+msgid "Select if where you'd the nested pages menu should appear on projects."
+msgstr ""
+
+#: lib/views/admin.php:42
+msgid "Below documents"
+msgstr ""
+
+#: lib/views/admin.php:43
+msgid "Top menu"
+msgstr ""
+
+#: lib/views/admin.php:48
+msgid "Enable global pages nav"
+msgstr ""
+
+#: lib/views/admin.php:52
+msgid "No"
+msgstr ""
+
+#: lib/views/admin.php:57
+msgid "Global Nav Label"
+msgstr ""
+
+#: lib/views/templates/page.php:32
+msgid "You don't have access to this page"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.projectpanorama.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add pages of content into Panorama"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "SnapOrbital"
+msgstr ""

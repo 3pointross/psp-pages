@@ -1,0 +1,62 @@
+
+
+#psp-pages-content {
+
+    @import 'partials/normalize';
+    @import 'partials/variables';
+    @import 'partials/type';
+
+    .alignleft {
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+
+    .alignright {
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+
+    .aligncenter {
+        margin: 0 auto 20px auto;
+    }
+
+    &.psp-overview-box h4.psp-box-title {
+        margin-top: -20px !important;
+        padding-top: 20px !important;
+    }
+
+    .pspp-back-link {
+        float: right;
+        color: #fff;
+        font-size: 14px;
+        padding-top: 3px;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+}
+
+#psp-projects {
+    .pspp-pages {
+        padding-top: 20px;
+    }
+    .psp-page-list {
+        li a {
+            font-weight: bold;
+        }
+    }
+    .psp-global-pages-nav {
+          .psp-section-nav__item:hover {
+               .psp-section-nav__items {
+                    left: auto;
+                    right: 0;
+                    &::before {
+                         left: auto;
+                         right: 15px;
+                    }
+               }
+          }
+    }
+}
