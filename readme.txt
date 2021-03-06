@@ -1,6 +1,7 @@
 = 1.6 =
-* TODO: Add github updates
-
+* Adds github automatic updates
+* Adds the ability to restrict access to pages by team or user
+* Adds global navigation
 
 = 1.5 =
 * Support for Pano 2.0
