@@ -48,6 +48,14 @@
         }
     }
     .psp-global-pages-nav {
+         margin-right: 0;
+         padding-right: 0;
+         margin: 0 0 0 15px;
+         padding: 0 0 0 15px;
+         & > .psp-section-nav__item {
+              margin: 0;
+              padding: 0;
+          }
           .psp-section-nav__item:hover {
                .psp-section-nav__items {
                     left: auto;
@@ -58,5 +66,8 @@
                     }
                }
           }
+    }
+    a.psp-btn + .psp-global-pages-nav {
+         border-left: 1px solid #ddd;
     }
 }

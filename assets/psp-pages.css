@@ -550,13 +550,29 @@
 #psp-projects .psp-page-list li a {
   font-weight: bold;
 }
-/* line 52, sass/psp-pages.scss */
+/* line 50, sass/psp-pages.scss */
+#psp-projects .psp-global-pages-nav {
+  margin-right: 0;
+  padding-right: 0;
+  margin: 0 0 0 15px;
+  padding: 0 0 0 15px;
+}
+/* line 55, sass/psp-pages.scss */
+#psp-projects .psp-global-pages-nav > .psp-section-nav__item {
+  margin: 0;
+  padding: 0;
+}
+/* line 60, sass/psp-pages.scss */
 #psp-projects .psp-global-pages-nav .psp-section-nav__item:hover .psp-section-nav__items {
   left: auto;
   right: 0;
 }
-/* line 55, sass/psp-pages.scss */
+/* line 63, sass/psp-pages.scss */
 #psp-projects .psp-global-pages-nav .psp-section-nav__item:hover .psp-section-nav__items::before {
   left: auto;
   right: 15px;
+}
+/* line 70, sass/psp-pages.scss */
+#psp-projects a.psp-btn + .psp-global-pages-nav {
+  border-left: 1px solid #ddd;
 }
