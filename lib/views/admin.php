@@ -56,7 +56,13 @@ function psp_pages_settings( $settings ) {
              'id'      => 'psp_pages_global_nav_label',
              'name'    => __( 'Global Nav Label', 'psp_projects' ),
              'type'    => 'text',
-             'default' => 'Pages',
+             'default' => 'Menu',
+        ),
+        'psp_pages_mobile_nav_label' => array(
+             'id'      => 'psp_pages_mobile_nav_label',
+             'name'    => __( 'Mobile Nav Label', 'psp_projects' ),
+             'type'    => 'text',
+             'default' => 'More',
         ),
     );
 

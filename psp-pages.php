@@ -29,6 +29,7 @@ if( !function_exists('psp_get_option') ) {
 add_action( 'psp_after_panorama_loaded', 'psp_pages_init' );
 
 function psp_pages_init() {
+
     include_once( 'lib/init.php' );
 }
 

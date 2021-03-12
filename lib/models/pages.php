@@ -37,6 +37,7 @@ function psp_pages_create_post_type() {
         'show_ui'             => true,
         'show_in_menu'        => false,
         'show_in_nav_menus'   => true,
+        'show_in_rest'        => true,
         'show_in_admin_bar'   => false,
         'menu_position'       => 20,
         'menu_icon'           => '',

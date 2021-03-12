@@ -45,7 +45,7 @@ function psp_get_global_pages() {
           return psp_get_public_pages();
      }
 
-     $cuser = wp_get_current_user();
+     $cuser    = wp_get_current_user();
      $team_ids = psp_get_team_ids( $cuser->ID );
 
      $team_meta = array();
@@ -72,6 +72,11 @@ function psp_get_global_pages() {
                'value'   =>   '"' . $cuser->ID . '"',
                'compare' =>   'LIKE'
           ),
+          array(
+               'key'     =>   'psp_pages_must_login',
+               'value'   =>   'Yes',
+               'compare' =>   '!='
+          )
      );
 
      if( !empty($team_meta) ) {
@@ -84,14 +89,56 @@ function psp_get_global_pages() {
 
      $pages = new WP_Query($args);
 
-     if( $pages->have_posts() ) {
-          return $pages;
+     if( !$pages->have_posts() ) {
+
+          wp_reset_query(); wp_reset_postdata();
+
+          return false;
      }
 
-     return false;
+     $page_ids = array();
+
+     while( $pages->have_posts() ): $pages->the_post();
+          $page_ids[] = get_the_ID();
+     endwhile;
+
+     wp_reset_query(); wp_reset_postdata();
+
+     return $page_ids;
 
 }
 
 function psp_get_public_pages() {
-     return false;
+
+     $args = array(
+          'post_type'    =>   'psp_pages',
+          'posts_per_page'    =>   -1,
+          'meta_query'   =>   array(
+               array(
+                    'key'   =>   'psp_pages_must_login',
+                    'value' =>   'Yes',
+                    'compare' => 'NOT'
+               )
+          )
+     );
+
+     $pages = new WP_Query($args);
+
+     if( !$pages->have_posts() ) {
+
+          wp_reset_query(); wp_reset_postdata();
+
+          return false;
+     }
+
+     $page_ids = array();
+
+     while( $pages->have_posts() ): $pages->the_post();
+          $page_ids[] = get_the_ID();
+     endwhile;
+
+     wp_reset_query(); wp_reset_postdata();
+
+     return $page_ids;
+
 }
