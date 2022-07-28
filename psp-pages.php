@@ -3,7 +3,7 @@
  * Plugin Name: Project Panorama Pages
  * Plugin URI: http://www.projectpanorama.com
  * Description: Add pages of content into Panorama
- * Version: 1.6
+ * Version: 1.6.4
  * Author: SnapOrbital
  * Author URI: http://www.projectpanorama.com
  * License: GPL2
@@ -13,7 +13,7 @@
 do_action( 'psp_pages_before_init' );
 
 $defintions = array(
-    'PSP_PAGES_VER'  =>  '1.6',
+    'PSP_PAGES_VER'  =>  '1.6.4',
     'PSP_PAGES_PATH' =>  plugin_dir_path( __FILE__ ),
     'PSP_PAGES_URL'  =>  plugin_dir_url( __FILE__ )
 );
@@ -30,7 +30,10 @@ add_action( 'psp_after_panorama_loaded', 'psp_pages_init' );
 
 function psp_pages_init() {
 
-    include_once( 'lib/init.php' );
+     register_nav_menu( 'psp_pages_menu', __( 'Add to the Panorama Pages dropdown menu', 'psp_projects' ) );
+
+     include_once( 'lib/init.php' );
+
 }
 
 add_action( 'plugins_loaded', 'psp_pages_localize_init' );
